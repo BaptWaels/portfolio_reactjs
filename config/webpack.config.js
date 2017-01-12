@@ -30,7 +30,9 @@ webpackConfig.entry = {
   app : __DEV__
     ? [APP_ENTRY].concat(`webpack-hot-middleware/client?path=${project.compiler_public_path}__webpack_hmr`)
     : [APP_ENTRY],
-  vendor : project.compiler_vendors
+  vendor : project.compiler_vendors,
+  typist: '!!style!css!react-typist/dist/Typist.css',
+  reactmdl: ['!!style!css!react-mdl/extra/material.min.css', 'react-mdl/extra/material.min.js']
 }
 
 // ------------------------------------
