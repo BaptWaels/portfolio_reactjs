@@ -1,4 +1,23 @@
-.route--active {
-  font-weight: bold;
-  text-decoration: underline;
+.demo-buttons {
+  display: block;
+  margin-left: 50px;
+  padding: 0.6em;
+  font-size: 20px;
+  font-family: 'Raleway', Arial;
+  color: #b8b7ad;
+  text-decoration: none;
+
+  .route--active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .icon {
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
+}
+
+.demo-buttons:hover, .demo-buttons:focus, .demo-buttons.route--active {
+  color: #c94e50;
 }
