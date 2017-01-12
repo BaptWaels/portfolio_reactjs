@@ -1,15 +1,68 @@
 import React from 'react'
-import DuckImage from '../assets/Duck.jpg'
+
+import { Grid, Cell } from 'react-mdl';
 import './HomeView.scss'
 
-export const HomeView = () => (
-  <div>
-    <h4>Welcome!</h4>
-    <img
-      alt='This is a duck, because Redux!'
-      className='duck'
-      src={DuckImage} />
-  </div>
-)
+
+import Typist from 'react-typist';
+
+class HomeView extends React.Component {
+  constructor(props) {
+		super(props);
+		this.state = {
+			pos: {x: 0, y: 0}
+		};
+	}
+
+  onMouseMove(e) {
+    this.setState({
+    	pos: {
+    		x: e.pageX,
+    		y: e.pageY
+    	}
+    });
+
+    this.animate();
+  }
+
+	animate() {
+
+	    if ('ontouchstart' in window == false) {
+
+        let [moveX, moveY] = [(this.state.pos.x / -100), (this.state.pos.y / -120)];
+        let { section, willMove } = this.refs;
+
+				willMove.style.transform = `translate3d(${moveX / 2}px, ${moveY}px, 0)`;
+		}
+	}
+
+	render() {
+    let cursor = {
+      show: true,
+      blink: true,
+      hideWhenDone: true,
+      hideWhenDoneDelay: 1500
+    };
+
+		return (
+      <Grid onMouseMove={this.onMouseMove.bind(this)} className="section">
+        <div style={{width:'100%'}}>
+          <Cell col={12} tablet={8} phone={4}>
+            <h1 className="middle" ref="section">
+              <span className="bold" ref="willMove">Hi, I'm <span className="red">Baptiste</span></span>
+              <br/>
+            </h1>
+          </Cell>
+
+          <Cell col={12} tablet={8} phone={4}>
+            <Typist avgTypingDelay={80} startDelay={1000} cursor={cursor}>
+              <span className="job">A web developer <br /> Freelance</span>
+            </Typist>
+          </Cell>
+        </div>
+      </Grid>
+    )
+	}
+}
 
 export default HomeView
