@@ -1,4 +1,4 @@
-.demo-buttons {
+.button {
   display: block;
   margin-left: 50px;
   padding: 0.6em;
@@ -6,6 +6,7 @@
   font-family: 'Raleway', Arial;
   color: #b8b7ad;
   text-decoration: none;
+  cursor: pointer;
 
   .route--active {
     font-weight: bold;
@@ -18,6 +19,6 @@
   }
 }
 
-.demo-buttons:hover, .demo-buttons:focus, .demo-buttons.route--active {
+.button:hover, .button.route--active {
   color: #c94e50;
 }

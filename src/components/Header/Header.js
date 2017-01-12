@@ -1,5 +1,6 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
+import { Link as AnchorLink } from 'react-scroll';
 
 import { slide as Menu } from 'react-burger-menu'
 import { Icon } from 'react-mdl'
@@ -11,8 +12,23 @@ let RadiumIndexLink = Radium(IndexLink)
 
 import './Header.scss'
 
-export const Header = () => {
-  let active = 'home';
+export const Header = (props) => {
+
+  const isActive = (val) => {
+    if((props.location.pathname === '/' && props.location.hash === '' )|| props.location.hash.split('#')[1] === val){
+      return ' route--active';
+    }
+
+    return '';
+  }
+
+  const isActiveRoute = (val) => {
+    if(props.location.pathname.split('/')[1] === val){
+      return ' route--active';
+    }
+
+    return '';
+  }
 
   var menuStyles = {
     bmBurgerButton: {
@@ -37,20 +53,16 @@ export const Header = () => {
 
   return (
   <Menu right noOverlay id={"menu"} className="menu" styles={ menuStyles }>
-    <RadiumIndexLink to='/' className="demo-buttons" activeClassName='route--active'>
+    <RadiumLink to='/#home' className={"button" + isActive('home')}>
       <Icon name="favorite_border" className="icon" /> Home
-    </RadiumIndexLink>
+    </RadiumLink>
 
-    <RadiumLink to='/counter' className="demo-buttons" activeClassName='route--active'>
+    <RadiumLink to='/#about' className={"button" + isActive('about')}>
       <Icon name="face" className="icon" /> About
     </RadiumLink>
 
-    <RadiumLink to='/projects' className="demo-buttons" activeClassName='route--active'>
+    <RadiumLink to='/counter' className={"button" + isActiveRoute('counter')}>
       <Icon name="computer" className="icon" /> Projects
-    </RadiumLink>
-
-    <RadiumLink to='/projects' className="demo-buttons" activeClassName='route--active'>
-      <Icon name="folder_open" className="icon" /> Resume
     </RadiumLink>
   </Menu>
   )

@@ -1,12 +1,13 @@
 import React from 'react'
 
 import { Grid, Cell } from 'react-mdl';
-import './HomeView.scss'
+import { browserHistory } from 'react-router';
+import './Home.scss'
 
-
+import VisibilitySensor from 'react-visibility-sensor';
 import Typist from 'react-typist';
 
-class HomeView extends React.Component {
+class Home extends React.Component {
   constructor(props) {
 		super(props);
 		this.state = {
@@ -26,15 +27,19 @@ class HomeView extends React.Component {
   }
 
 	animate() {
-
 	    if ('ontouchstart' in window == false) {
-
         let [moveX, moveY] = [(this.state.pos.x / -100), (this.state.pos.y / -120)];
         let { section, willMove } = this.refs;
 
 				willMove.style.transform = `translate3d(${moveX / 2}px, ${moveY}px, 0)`;
 		}
 	}
+
+  _handleVisibilityChange(isVisible) {
+    if(isVisible){
+      browserHistory.push('/#home');
+    }
+  }
 
 	render() {
     let cursor = {
@@ -45,7 +50,8 @@ class HomeView extends React.Component {
     };
 
 		return (
-      <Grid onMouseMove={this.onMouseMove.bind(this)} className="section">
+      <Grid onMouseMove={this.onMouseMove.bind(this)} id="home" className="home">
+        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={200} intervalCheck={false} scrollCheck={true} delayedCall={true} />
         <div style={{width:'100%'}}>
           <Cell col={12} tablet={8} phone={4}>
             <h1 className="middle" ref="section">
@@ -65,4 +71,4 @@ class HomeView extends React.Component {
 	}
 }
 
-export default HomeView
+export default Home

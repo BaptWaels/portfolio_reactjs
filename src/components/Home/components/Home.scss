@@ -1,6 +1,6 @@
-.section{
+.home{
   color: #ffffff;
-	height: 100vh;
+	height: 90vh;
   text-shadow: -2px 1px rgba(black, 0.1);
 	display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .section {
+  .home {
     br {
       display: inline;
     }
