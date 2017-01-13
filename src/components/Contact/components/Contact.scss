@@ -2,11 +2,53 @@
   height: 70vh;
   padding: 0;
 
-  .right-contact {
-    display: flex;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
+  .left-contact {
+    font-family: 'Lato', Helvetica, Times, serif;
+
+    .contact-card {
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.35);
+      padding: 30px 30px 10px 25px;
+      margin: 0 auto;
+      display: inline-block;
+      overflow: hidden;
+
+      .title {
+        text-align: center;
+
+        h1 {
+          font-family: 'Lato', Helvetica, Times, serif;
+          font-size: 45px;
+          font-weight: 700;
+          margin-bottom: 0px;
+        }
+
+        h2 {
+          font-family: 'Lato', Helvetica, Times, serif;
+          font-size: 18px;
+          margin-top: 0px;
+          line-height: 30px;
+        }
+      }
+
+      .content {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .footer {
+        font-size: 18px;
+        text-align: right;
+      }
+    }
+  }
+
+  .right-contact {
     .coffee-mug{
       position:relative;
       margin:150px auto;

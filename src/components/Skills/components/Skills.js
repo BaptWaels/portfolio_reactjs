@@ -19,7 +19,7 @@ class Skills extends React.Component {
       <Grid id="skills" className="skills" noSpacing>
         <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={300} intervalCheck={false} scrollCheck={true} delayedCall={true} />
 
-        <Cell col={4} tablet={3} mobile={4} className="left-skills">
+        <Cell col={2} tablet={3} mobile={4} className="left-skills">
           <div className="section-title">
             <div className="sliding">
               Skills
@@ -27,7 +27,7 @@ class Skills extends React.Component {
           </div>
         </Cell>
 
-        <Cell col={8} tablet={5} mobile={4} className="right-skills">
+        <Cell col={10} tablet={5} mobile={4} className="right-skills">
         </Cell>
       </Grid>
     )

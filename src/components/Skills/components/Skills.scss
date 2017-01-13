@@ -1,9 +1,9 @@
 .skills{
-  height: 100vh;
+  height: 80vh;
   padding: 0;
 
   .left-skills {
-    background-color: rgb(255, 64, 86);
+    background-color: #fff;
     margin: 0;
     display: flex;
     align-items: center;
@@ -11,14 +11,14 @@
 
     .section-title{
       width: 100%;
-      color: #fff;
+      color: grey;
       font-family: 'Satisfy', cursive;
       font-size: 65px;
     }
   }
 
   .right-skills {
-    background-color: #fff;
+    background-color: grey;
     overflow-y: scroll;
   }
 }
