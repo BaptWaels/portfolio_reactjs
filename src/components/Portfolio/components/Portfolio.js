@@ -17,7 +17,7 @@ class Portfolio extends React.Component {
 	render() {
 		return (
       <Grid id="portfolio" className="portfolio" noSpacing>
-        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={300} intervalCheck={false} scrollCheck={true} delayedCall={true} />
+        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={600} intervalCheck={false} scrollCheck={true} delayedCall={true} />
 
         <Cell col={4} tablet={3} mobile={4} className="left-portfolio">
           <div className="section-title">

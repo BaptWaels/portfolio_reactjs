@@ -1,13 +1,13 @@
 .skills{
-  height: 80vh;
   padding: 0;
+  text-align: center;
 
   .left-skills {
+    height: 370px;
     background-color: #fff;
     margin: 0;
     display: flex;
     align-items: center;
-    text-align: center;
 
     .section-title{
       width: 100%;
@@ -18,7 +18,19 @@
   }
 
   .right-skills {
-    background-color: grey;
-    overflow-y: scroll;
+    height: 370px;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+
+    .container {
+      width: 100%;
+
+      .hightcharts-container{
+        display: inline-block;
+        width: 100%;
+        max-width: 850px;
+      }
+    }
   }
 }
