@@ -1,8 +1,8 @@
-.about{
+.portfolio{
   height: 100vh;
   padding: 0;
 
-  .left-about {
+  .left-portfolio {
     background-color: rgb(255, 64, 86);
     margin: 0;
     display: flex;
@@ -17,7 +17,7 @@
     }
   }
 
-  .right-about {
+  .right-portfolio {
     background-color: #fff;
     overflow-y: scroll;
   }

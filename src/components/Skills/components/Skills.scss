@@ -1,8 +1,8 @@
-.about{
+.skills{
   height: 100vh;
   padding: 0;
 
-  .left-about {
+  .left-skills {
     background-color: rgb(255, 64, 86);
     margin: 0;
     display: flex;
@@ -17,7 +17,7 @@
     }
   }
 
-  .right-about {
+  .right-skills {
     background-color: #fff;
     overflow-y: scroll;
   }

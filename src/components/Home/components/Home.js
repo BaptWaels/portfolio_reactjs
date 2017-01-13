@@ -50,7 +50,7 @@ class Home extends React.Component {
     };
 
 		return (
-      <Grid onMouseMove={this.onMouseMove.bind(this)} id="home" className="home">
+      <Grid onMouseMove={this.onMouseMove.bind(this)} id="home" className="home" noSpacing>
         <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={200} intervalCheck={false} scrollCheck={true} delayedCall={true} />
         <div style={{width:'100%'}}>
           <Cell col={12} tablet={8} phone={4}>
