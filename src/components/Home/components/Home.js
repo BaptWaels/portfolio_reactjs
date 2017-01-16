@@ -62,7 +62,7 @@ class Home extends React.Component {
 
           <Cell col={12} tablet={8} phone={4}>
             <Typist avgTypingDelay={80} startDelay={1000} cursor={cursor}>
-              <span className="job">A web developer <br /> Freelance</span>
+              <span className="job">Développeur web<br /> Freelance</span>
             </Typist>
           </Cell>
         </div>

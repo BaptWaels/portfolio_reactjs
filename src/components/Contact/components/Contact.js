@@ -25,7 +25,7 @@ class Contact extends React.Component {
           <Cell className="contact-card" shadow={6}>
               <div className="title">
                 <h1><span>&lt;</span> B<span className="red">W</span> <span>&gt;</span></h1>
-                <h2>Web developer - Freelance</h2>
+                <h2>Développeur web - Freelance</h2>
               </div>
 
               <div className="content">

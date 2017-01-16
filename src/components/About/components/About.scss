@@ -1,5 +1,4 @@
 .about{
-  height: 100vh;
   padding: 0;
 
   .left-about {
@@ -19,6 +18,47 @@
 
   .right-about {
     background-color: #fff;
-    overflow-y: scroll;
+    text-align: center;
+
+    .container {
+      margin-top: 30px;
+
+      h1 {
+        font-family: 'Lato', Helvetica, Times, serif;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .img-container {
+        margin-top: 40px;
+        text-align: center;
+        img {
+          width: 120px;
+          height: 110px;
+        }
+
+        .travel-img{
+          width: 110px;
+        }
+      }
+
+      .description-container {
+        width: 100%;
+
+        .description{
+          max-width: 230px;
+          width: 90%;
+          margin: 0 auto;
+          text-align: justify;
+        }
+      }
+
+      .avatar {
+        .me {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
   }
 }
