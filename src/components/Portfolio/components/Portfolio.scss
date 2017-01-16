@@ -1,9 +1,8 @@
 .portfolio{
-  height: 100vh;
   padding: 0;
 
   .left-portfolio {
-    background-color: rgb(255, 64, 86);
+    background-color: grey;
     margin: 0;
     display: flex;
     align-items: center;
@@ -19,6 +18,5 @@
 
   .right-portfolio {
     background-color: #fff;
-    overflow-y: scroll;
   }
 }
