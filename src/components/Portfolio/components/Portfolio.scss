@@ -1,22 +1,4 @@
 .portfolio{
-  padding: 0;
-
-  .left-portfolio {
-    background-color: grey;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    .section-title{
-      width: 100%;
-      color: #fff;
-      font-family: 'Satisfy', cursive;
-      font-size: 65px;
-    }
-  }
-
-  .right-portfolio {
-    background-color: #fff;
-  }
+  background-color: #ecf0f1;
+  padding: 20px;
 }

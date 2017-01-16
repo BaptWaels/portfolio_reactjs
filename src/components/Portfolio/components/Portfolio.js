@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Grid, Cell } from 'react-mdl';
+import { Grid, Cell, Card } from 'react-mdl';
 import { browserHistory } from 'react-router';
 
 import VisibilitySensor from 'react-visibility-sensor';
@@ -25,24 +25,23 @@ class Portfolio extends React.Component {
       {name: 'Fourth One', url: '/fourth', skills: 'Java, C#', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2014/12/logotype-flie-attorneys-640x480.jpg'},
       {name: 'Second One', url: '/fifth', skills: 'Public speaking', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2014/12/bd-2-pointdecontact-640x480.jpg'},
       {name: 'Third One', url: '/sixth', skills: 'Angular 2', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2014/11/daras-640x480.jpg'},
-      {name: 'Second One', url: '/seventh', skills: 'Bootstrap, OSX, Javascript', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2014/09/neticpro-640x480.jpg'},
-      {name: 'Third One', url: '/third', skills: 'REST API, HTTPS, CSS', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2014/09/victoire-2014-640x480.jpg'}
+      {name: 'Fourth One', url: '/fourth', skills: 'Java, C#', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2013/09/abracadabroc-340x255.jpg'},
+      {name: 'Second One', url: '/fifth', skills: 'Public speaking', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2013/09/MRmoustache-340x255.jpg'},
+      {name: 'Third One', url: '/sixth', skills: 'Angular 2', imgUrl: 'http://www.mllezel.com/site/wp-content/uploads/2012/10/tropheedelamaison3-340x255.jpg'},
     ];
 
 		return (
-      <Grid id="portfolio" className="portfolio" noSpacing>
+      <div id="portfolio" className="portfolio">
         <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={600} intervalCheck={false} scrollCheck={true} delayedCall={true} />
 
-        <Cell col={12} tablet={8} mobile={4} className="right-portfolio">
-          <Grid noSpacing>
-            {
-              projects.map((project, i) =>
-                <Project project={project} key={i} />
-              )
-            }
-          </Grid>
-        </Cell>
-      </Grid>
+        <Grid shadow={4} noSpacing>
+          {
+            projects.map((project, i) =>
+              <Project project={project} key={i} />
+            )
+          }
+        </Grid>
+      </div>
     )
 	}
 }
