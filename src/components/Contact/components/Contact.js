@@ -3,6 +3,8 @@ import React from 'react'
 import { Grid, Cell, Card } from 'react-mdl';
 import { browserHistory } from 'react-router';
 
+import { SocialIcon } from 'react-social-icons';
+
 import VisibilitySensor from 'react-visibility-sensor';
 
 import './Contact.scss'
@@ -31,6 +33,12 @@ class Contact extends React.Component {
               <div className="content">
                 <div>Tél: +33 (0)6 31 07 52 38</div>
                 <div>bwaels@gmail.com</div>
+              </div>
+
+              <div className="social">
+                <SocialIcon style={{width: 35, height: 35}} url="http://twitter.com/baptwaels" />
+                <SocialIcon style={{width: 35, height: 35}} url="https://www.linkedin.com/in/baptistewaels" />
+                <SocialIcon style={{width: 35, height: 35}} url="https://medium.com/@baptwaels" />
               </div>
             </Cell>
         </Cell>
