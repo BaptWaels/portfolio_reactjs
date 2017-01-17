@@ -5,8 +5,6 @@ import { browserHistory } from 'react-router';
 
 import { SocialIcon } from 'react-social-icons';
 
-import VisibilitySensor from 'react-visibility-sensor';
-
 import './Contact.scss'
 
 
@@ -21,8 +19,6 @@ class Contact extends React.Component {
 	render() {
 		return (
       <Grid id="contact" className="contact" noSpacing>
-        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={50} intervalCheck={false} scrollCheck={true} delayedCall={true} />
-
         <Cell col={8} tablet={8} mobile={4} align="middle" className="left-contact">
           <Cell className="contact-card" shadow={6}>
               <div className="title">

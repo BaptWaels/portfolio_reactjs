@@ -4,7 +4,6 @@ import { Grid, Cell } from 'react-mdl';
 import { browserHistory } from 'react-router';
 import './Home.scss'
 
-import VisibilitySensor from 'react-visibility-sensor';
 import Typist from 'react-typist';
 
 class Home extends React.Component {
@@ -35,12 +34,6 @@ class Home extends React.Component {
 		}
 	}
 
-  _handleVisibilityChange(isVisible) {
-    if(isVisible){
-      browserHistory.push('/#home');
-    }
-  }
-
 	render() {
     let cursor = {
       show: true,
@@ -51,7 +44,6 @@ class Home extends React.Component {
 
 		return (
       <Grid onMouseMove={this.onMouseMove.bind(this)} id="home" className="home" noSpacing>
-        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={200} intervalCheck={false} scrollCheck={true} delayedCall={true} />
         <div style={{width:'100%'}}>
           <Cell col={12} tablet={8} phone={4}>
             <h1 className="middle" ref="section">

@@ -13,11 +13,6 @@ require('highcharts/highcharts-more.js')(Highcharts);
 const ReactHighcharts = require('react-highcharts');
 
 class Skills extends React.Component {
-  _handleVisibilityChange(isVisible) {
-    if(isVisible){
-      browserHistory.push('/#skills');
-    }
-  };
 
 	render() {
 
