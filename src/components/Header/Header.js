@@ -61,6 +61,10 @@ export const Header = (props) => {
       <Icon name="face" className="icon" /> About
     </RadiumLink>
 
+    <RadiumLink to='/#presta' className={"button" + isActive('presta')}>
+      <Icon name="brush" className="icon" /> Presta
+    </RadiumLink>
+
     <RadiumLink to='/#skills' className={"button" + isActive('skills')}>
       <Icon name="computer" className="icon" /> Skills
     </RadiumLink>

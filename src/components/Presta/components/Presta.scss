@@ -1,8 +1,8 @@
-.about{
+.presta{
   padding: 0;
 
-  .left-about {
-    background-color: rgb(255, 64, 86);
+  .left-presta {
+    background-color: #F1FFFA;
     margin: 0;
     display: flex;
     align-items: center;
@@ -10,19 +10,19 @@
 
     .section-title{
       width: 100%;
-      color: #fff;
+      color: grey;
       font-family: 'Satisfy', cursive;
       font-size: 65px;
     }
   }
 
-  .right-about {
-    background-color: #F1FFFA;
+  .right-presta {
+    background-color: #fff;
     text-align: center;
     padding-bottom: 30px;
 
     .container {
-      margin-top: 30px;
+      margin-top: 10px;
 
       h1 {
         font-family: 'Lato', Helvetica, Times, serif;
@@ -31,7 +31,7 @@
       }
 
       .img-container {
-        margin-top: 40px;
+        margin-top: 50px;
         text-align: center;
         img {
           width: 120px;
@@ -47,7 +47,7 @@
         width: 100%;
 
         .description{
-          max-width: 230px;
+          max-width: 250px;
           width: 90%;
           margin: 0 auto;
           text-align: justify;
