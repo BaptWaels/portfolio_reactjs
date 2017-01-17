@@ -5,19 +5,18 @@ import { browserHistory } from 'react-router';
 
 import VisibilitySensor from 'react-visibility-sensor';
 
-import Happy from '../assets/happy.png'
-import Travel from '../assets/travel.png'
-import Heart from '../assets/heart.png'
-import Iterate from '../assets/iterate.png'
-import Sport from '../assets/sport.png'
-import Quality from '../assets/quality.png'
+import Travel from '../assets/travel.png';
+import Heart from '../assets/heart.png';
+import Iterate from '../assets/iterate.png';
+import Sport from '../assets/sport.png';
+import Quality from '../assets/quality.png';
 
 import './About.scss'
 
 class About extends React.Component {
   _handleVisibilityChange(isVisible) {
     if(isVisible){
-      browserHistory.push('/#about');
+      //browserHistory.push('/#about');
     }
   };
 
@@ -48,7 +47,7 @@ class About extends React.Component {
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                    Je me tiens à la pointe des dernières innovations. Ceci me permet d'être fort de propositions afin d'<span className="strong">avancer ensemble</span> vers un produit à la hauteur de <span className="strong">nos attentes</span>.
                   </div>
                 </div>
               </Cell>
@@ -60,7 +59,7 @@ class About extends React.Component {
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                    Sans intermédiaires, la <span className="strong">qualité</span> de nos échanges est optimum. Ceci optimise les itérations et <span className="strong">améliore votre produit final</span>.
                   </div>
                 </div>
               </Cell>
@@ -73,7 +72,7 @@ class About extends React.Component {
 
                 <div className="description-container">
                   <div className="description">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                    Vous <span className="strong">rendre heureux, ma mission</span> ! Quoi de mieux que d'<span className="strong">avancer en compagnie</span> d'un développeur <span className="strong">passionné</span> ?
                   </div>
                 </div>
               </Cell>
@@ -85,8 +84,7 @@ class About extends React.Component {
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    s'adapter, ouverture d'esprit, inspiration
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                    L'entrepreneuriat, mes rencontres, mes voyages (USA, UK, Norvège ...) sont de <span className="strong">superbes aventures</span> ! Adaptation, ouverture d'esprit, <span className="strong">persévérance et optimisme</span> sont chers à mes yeux.
                   </div>
                 </div>
               </Cell>
@@ -100,7 +98,7 @@ class About extends React.Component {
 
                 <div className="description-container">
                   <div className="description">
-                    Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.
+                    Le <a target="_blank" href="https://www.youtube.com/watch?v=sBt83nuqpxs">Crossfit</a>* me permet de <span className="strong">relever de nouveaux défis</span> tous les jours. Au plaisir d'essayer ensemble durant notre première rencontre ?
                   </div>
                 </div>
               </Cell>
