@@ -3,8 +3,6 @@ import React from 'react'
 import { Grid, Cell } from 'react-mdl';
 import { browserHistory } from 'react-router';
 
-import VisibilitySensor from 'react-visibility-sensor';
-
 import './Skills.scss'
 
 import Highcharts from 'highcharts';
@@ -109,8 +107,6 @@ class Skills extends React.Component {
 
 		return (
       <Grid id="skills" className="skills" noSpacing>
-        <VisibilitySensor onChange={this._handleVisibilityChange} partialVisibility minTopValue={100} intervalCheck={false} scrollCheck={true} delayedCall={true} />
-
         <Cell col={4} tablet={3} mobile={4} className="left-skills">
           <div className="section-title">
             <div className="sliding">

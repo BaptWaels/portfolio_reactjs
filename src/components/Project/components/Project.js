@@ -1,16 +1,22 @@
 import React from 'react'
 
-import { Grid, Cell, Card, CardActions, CardMenu, CardTitle } from 'react-mdl';
+import { Grid, Cell, Card, CardActions, CardMenu, CardTitle, Dialog } from 'react-mdl';
 import { browserHistory } from 'react-router';
+
 
 import './Project.scss'
 
 class Project extends React.Component {
 
   handleClick(){
-    const { project } = this.props;
+    const { project, toggleProjectDialog } = this.props;
 
-    browserHistory.push('/portfolio' + project.url);
+    toggleProjectDialog(project);
+    //browserHistory.push('/project' + project.url);
+  }
+
+  getSkillString(skill, index){
+    return this.props.project.skills.length -1 !== index ? skill.name + ', ' : skill.name;
   }
 
 	render() {
@@ -31,7 +37,7 @@ class Project extends React.Component {
         <div className="back">
           <div className="project-title">
             <h3>{ project.name }</h3>
-            <span>{ project.skills }</span>
+            <span>{ project.skills.map(this.getSkillString.bind(this)) }</span>
           </div>
         </div>
       </Cell>
