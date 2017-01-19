@@ -1,8 +1,9 @@
 .projectDialog{
-  height: 90vh;
   width: 70vw;
   max-width: 1300px;
   min-width: 320px;
+  box-sizing: border-box;
+  overflow-y: auto;
 
   .close {
     text-align: right;
@@ -12,9 +13,9 @@
     }
   }
 
-  .content{
-    overflow: auto;
-    max-height: 100%;
+  .content {
+    box-sizing:border-box;
+    overflow-y: auto;
 
     .title{
       text-align: center;
@@ -37,10 +38,56 @@
       .skill-chip{
         margin-right: 10px;
       }
+
+      .skill-chip:hover {
+        // background-color: #6C7A89;
+        opacity: 0.8;
+        cursor: default;
+      }
     }
 
     .images {
+      max-height: inherit;
 
+      .gallery {
+        max-height: inherit;
+      }
+    }
+
+    .description {
+      .client {
+        text-align: justify;
+        padding-right: 15px;
+
+        h2 {
+          color: #2980b9;
+          font-family: 'Montserrat', Montserrat, Helvetica;
+          line-height: 1.2;
+          letter-spacing: -.45rem;
+          font-size: 2.853em;
+          font-weight: 700;
+          margin: 0px;
+        }
+      }
+
+      .description-section {
+        margin-bottom: 30px;
+
+        h2 {
+          color: #2980b9;
+          font-family: 'Montserrat', Montserrat, Helvetica;
+          line-height: 1.2;
+          letter-spacing: -.45rem;
+          font-size: 4.853em;
+          font-weight: 700;
+          margin: 0px;
+        }
+
+        .desc {
+          text-align: justify;
+          padding: 10px;
+        }
+      }
     }
   }
 }

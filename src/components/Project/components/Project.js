@@ -24,8 +24,8 @@ class Project extends React.Component {
 
     var Image = project.imgUrl;
 
-    if(project.img){
-      var Image = require(`./assets/${project.img}`)
+    if(project.main_image){
+      var Image = require(`./assets/${project.main_image}`)
     }
 
     return (

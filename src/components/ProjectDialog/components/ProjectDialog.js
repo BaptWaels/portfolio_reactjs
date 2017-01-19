@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Dialog, Icon, Chip, ChipContact } from 'react-mdl';
+import { Grid, Cell, Dialog, Icon, Chip, ChipContact } from 'react-mdl';
 
 import Gallery from 'react-photo-gallery';
 
@@ -35,27 +35,21 @@ class ProjectDialog extends React.Component {
 		let project = projectDialog.project;
 		let images = [
 			{
-				src: require('./assets/illustration/devops.png'),
-				width: 150,
-				height: 100,
+				src: require('./assets/illustration/' + project.images[0]),
+				width: 60,
+				height: 20,
+				aspectRatio: 3
+		 },
+			{
+				src: require('./assets/illustration/' + project.images[1]),
+				width: 30,
+				height: 20,
 				aspectRatio: 1.5
 		 },
 			{
-				src: require('./assets/illustration/jwaves.png'),
-				width: 150,
-				height: 100,
-				aspectRatio: 1.5
-		 },
-			{
-				src: require('./assets/illustration/lilly.png'),
-				width: 150,
-				height: 100,
-				aspectRatio: 1.5
-		 },
-			{
-				src: require('./assets/illustration/parkki.png'),
-				width: 150,
-				height: 100,
+				src: require('./assets/illustration/' + project.images[2]),
+				width: 30,
+				height: 20,
 				aspectRatio: 1.5
 		 }
 		]
@@ -76,8 +70,24 @@ class ProjectDialog extends React.Component {
 					</div>
 
 					<div className="images">
-						<Gallery photos={images} disableLightbox />
+						<Gallery className="gallery" photos={images} disableLightbox />
 					</div>
+
+					<Grid className="description">
+						<Cell col={8} className="description-section">
+							<h2>{project.description.section.title}</h2>
+							<div className="desc">
+								{project.description.section.content}
+							</div>
+						</Cell>
+
+						<Cell offset={1} col={3} className="client">
+							<h2>{project.description.client.title}</h2>
+							<div className="desc">
+								{project.description.client.content}
+							</div>
+						</Cell>
+					</Grid>
 				</div>
       </Dialog>
     );
