@@ -12,9 +12,15 @@ const ReactHighcharts = require('react-highcharts');
 
 class Skills extends React.Component {
 
+	componentDidMount(){
+		let chart = this.refs.chart.getChart();
+		let container = this.refs.container;
+
+		// I'm so sorry for that but ...
+		setTimeout(() => chart.setSize(container.offsetWidth), 0);
+	}
+
 	render() {
-
-
     var config = {
       chart: {
             type: 'bubble',
@@ -116,10 +122,8 @@ class Skills extends React.Component {
         </Cell>
 
         <Cell col={8} tablet={5} mobile={4} className="right-skills">
-          <div className="container">
-            <div className="hightcharts-container">
-              <ReactHighcharts config={config}></ReactHighcharts>
-            </div>
+          <div className="container" ref="container">
+            <ReactHighcharts config={config} ref="chart" />
           </div>
         </Cell>
       </Grid>

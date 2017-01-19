@@ -23,13 +23,10 @@
     display: flex;
     align-items: center;
 
-    .container {
-
-      .hightcharts-container{
-        display: inline-block;
-        width: 100%;
-        max-width: 850px;
-      }
+    .container{
+      width: 100%;
+      margin: 0 auto;
+      max-width: 850px;
     }
   }
 }
