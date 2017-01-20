@@ -50,7 +50,7 @@ class About extends React.Component {
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    Sans intermédiaires, la <span className="strong">qualité</span> de nos échanges est optimum. Ceci optimise les itérations et <span className="strong">améliore votre produit final</span>.
+                    Sans intermédiaire, la <span className="strong">qualité</span> de nos échanges est optimum. Ceci optimise les itérations et <span className="strong">améliore votre produit final</span>.
                   </div>
                 </div>
               </Cell>

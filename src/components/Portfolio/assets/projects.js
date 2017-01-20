@@ -19,7 +19,7 @@ export default [
         description: {
             client: {
                 title: "Hollio",
-                content: "Hollio est une startup qui fourni à ses clients des solutions d'analyse de propagation d'ondes."
+                content: "Hollio est une startup qui fournit à ses clients des solutions d'analyse de propagation d'ondes."
             },
             section: {
                 title: "En bref...",
@@ -43,12 +43,12 @@ export default [
         images: ['pebblo_1.png', 'pebblo_3.png', 'pebblo_2.png'],
         description: {
             client: {
-                title: "Devocité",
-                content: "Devocite est spécialisée dans la réalisation d’objets multimédia spécifiques à destination du grand public. Leur objectif est d’offrir un accès simplifié et ludique à l’information culturelle, citoyenne et pédagogique au plus grand nombre."
+                title: "Dévocité",
+                content: "Dévocité est spécialisée dans la réalisation d’objets multimédia spécifiques à destination du grand public. Leur objectif est d’offrir un accès simplifié et ludique à l’information culturelle, citoyenne et pédagogique au plus grand nombre."
             },
             section: {
                 title: "En bref...",
-                content: "Dans le but de proposer des visites interactives à ses clients, Devocité m'a demandé de developper un backend d'administration afin de pouvoir configurer ses cartes interactives de façon générique s'appuyant sur leur API REST. Ce backend doit pouvoir configurer tout type de cartes (indoor / outdoor). On peut par exemple ajouter des points d'intérêts avec descriptions multilingues, photos ..."
+                content: "Dans le but de proposer des visites interactives à ses clients, Devocité m'a demandé de développer un backend d'administration afin de pouvoir configurer ses cartes interactives de façon générique s'appuyant sur leur API REST. Ce backend doit pouvoir configurer tout type de cartes (indoor / outdoor). On peut par exemple ajouter des points d'intérêts avec descriptions multilingues, photos ..."
             }
         }
     },
@@ -73,11 +73,11 @@ export default [
         description: {
             client: {
                 title: "Parkki",
-                content: "Parkki est une solution permettant d'optimiser le trafic en ville en facilitant le stationnement en voirie. C'est un système de capteurs positionnés sur l'éclairage public ou sur façade qui identifient les places disponibles et permet ainsi aux territoires d'optimiser leurs infrastructures mais aussi aux usagers de se garer au plus vite et au plus près."
+                content: "Parkki est une solution permettant d'optimiser le trafic en ville en facilitant le stationnement en voirie. C'est un système de capteurs positionnés sur l'éclairage public ou sur façade qui identifie les places disponibles et permet ainsi aux territoires d'optimiser leurs infrastructures mais aussi aux usagers de se garer au plus vite et au plus près."
             },
             section: {
                 title: "En bref...",
-                content: "Durant ma dernière année d'études, avec quelques amis, j'ai pu m'investir jour et nuit dans un projet de Startup, Parkki. Ce fut un très beau challenge autant humain que technique. J'ai pu participer aux différents choix techniques pour choisir la stack tech. ainsi qu'à l'élaboration du backoffice. Parkki est depuis incubée à Via-ID, incubateur de Norauto. Je n'ai cependant pas souhaité poursuivre l'aventure pour me diriger vers d'autres horizons tout en gardant cette fibre entrepreneurial. Bon amusement les copains :)"
+                content: "Durant ma dernière année d'études, avec quelques amis, j'ai pu m'investir jour et nuit dans un projet de Startup : Parkki. Ce fut un très beau challenge autant humain que technique. J'ai pu participer aux différents choix techniques pour choisir la stack tech. ainsi qu'à l'élaboration du backoffice. Parkki est depuis incubée à Via-ID, incubateur de Norauto. Je n'ai cependant pas souhaité poursuivre l'aventure pour me diriger vers d'autres horizons tout en gardant cette fibre entrepreneuriale. Bon amusement les copains :)"
             }
         }
     },
@@ -102,7 +102,7 @@ export default [
             },
             section: {
                 title: "En bref...",
-                content: "La communauté tech. à Lille étant assez active, de nombreux évènements, conférences sont organisés. Souhaitant m'investir à mon tours et relever un nouveau challenge, j'ai souhaité organiser et présenter Docker lors d'un Meetup. Ce fut une superbe expérience de parler devant 50 à 70 développeurs de la métropole Lilloise."
+                content: "La communauté tech. à Lille étant assez active, de nombreux évènements, conférences sont organisés. Souhaitant m'investir à mon tour et relever un nouveau challenge, j'ai souhaité organiser et présenter Docker lors d'un Meetup. Ce fut une superbe expérience de parler devant 50 à 70 développeurs de la métropole Lilloise."
             }
         }
     },
@@ -127,7 +127,7 @@ export default [
             },
             section: {
                 title: "En bref...",
-                content: "Durant mes années d'études, j'ai pu réaliser différents projets / POOC. Lilly est l'un d'entre eux. Nous avions pour but de réaliser un projet innovant et technique. Avec plusieurs amis, nous avons déicidé de créer de A à Z une table connectée. J'ai ainsi pu participer à la conception, aux choix techniques ainsi qu'à la réalisation de celle-ci. Etant fan d'IOT, ce projet était vraiment génial à réaliser !"
+                content: "Durant mes années d'études, j'ai pu réaliser différents projets / POOC. Lilly est l'un d'entre eux. Nous avions pour but de réaliser un projet innovant et technique. Avec plusieurs amis, nous avons décidé de créer de A à Z une table connectée. J'ai ainsi pu participer à la conception, aux choix techniques ainsi qu'à la réalisation de celle-ci. Etant fan d'IOT, ce projet était vraiment génial à réaliser !"
             }
         }
     },
@@ -151,7 +151,7 @@ export default [
             },
             section: {
                 title: "En bref...",
-                content: "Durant mes deux dernières années en alternance, j'ai pu proposer différents sujets de R&D à Décathlon. Je suis partis du constat qu'il était difficile d'avoir des retours client sur nos applications internes. J'ai ainsi pu développer un plugin JS à intégrer dans nos applications afin d'avoir un feedback de la part de nos utilisateurs. Sur ce projet, je me suis chargé de toute la stack (Conception, API Rest, Plugin JS, Interface Admin Angular.js, BDD, configuration du serveur etc.). Ce fut génial de mettre à disposition ce plugin à nos ~500 utilisateurs internes."
+                content: "Durant mes deux dernières années en alternance, j'ai pu proposer différents sujets de R&D à Décathlon. Je suis parti du constat qu'il était difficile d'avoir des retours clients sur nos applications internes. J'ai ainsi pu développer un plugin JS à intégrer dans nos applications afin d'avoir un feedback de la part de nos utilisateurs. Sur ce projet, je me suis chargé de toute la stack (Conception, API Rest, Plugin JS, Interface Admin Angular.js, BDD, configuration du serveur etc.). Ce fut génial de mettre à disposition ce plugin à nos ~500 utilisateurs internes à l'entreprise."
             }
         }
     },
