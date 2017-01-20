@@ -3,6 +3,7 @@ import React from 'react'
 import { Grid, Cell } from 'react-mdl';
 import { browserHistory } from 'react-router';
 
+import Avatar from '../assets/me_circle.png';
 import Travel from '../assets/travel.png';
 import Heart from '../assets/heart.png';
 import Iterate from '../assets/iterate.png';
@@ -26,7 +27,7 @@ class About extends React.Component {
         <Cell col={8} tablet={5} mobile={4} className="right-about">
           <div className="container">
             <div className="avatar">
-              <img className="me" draggable="false" src="https://js.coach/assets/jess-b1bdee06bb880adf0d84b22e860602edb21e471b703a438c87a60b95c4058d9c.png" />
+              <img className="me" draggable="false" src={Avatar} />
             </div>
 
             <Grid>
