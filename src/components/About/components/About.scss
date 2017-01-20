@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    min-height: 300px;
 
     .section-title{
       width: 100%;
@@ -63,10 +64,11 @@
         }
       }
 
-      .avatar {
+      .avatar{
+        margin-bottom: 20px;
         .me {
-          width: 150px;
-          height: 150px;
+          width: 200px;
+          height: 200px;
         }
       }
     }
