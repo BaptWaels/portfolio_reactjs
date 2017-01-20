@@ -3,6 +3,7 @@ import React from 'react'
 import { Grid, Cell, Dialog, Icon, Chip, ChipContact } from 'react-mdl';
 
 import Gallery from 'react-photo-gallery';
+import ReactPlayer from 'react-player';
 
 import './ProjectDialog.scss'
 
@@ -27,32 +28,36 @@ class ProjectDialog extends React.Component {
 
 	render() {
 		const { projectDialog } = this.props;
+		let images = null;
 
 		if(!projectDialog.toggle){
 			return <div></div>;
 		}
 
 		let project = projectDialog.project;
-		let images = [
-			{
-				src: require('./assets/illustration/' + project.images[0]),
-				width: 60,
-				height: 20,
-				aspectRatio: 3
-		 },
-			{
-				src: require('./assets/illustration/' + project.images[1]),
-				width: 30,
-				height: 20,
-				aspectRatio: 1.5
-		 },
-			{
-				src: require('./assets/illustration/' + project.images[2]),
-				width: 30,
-				height: 20,
-				aspectRatio: 1.5
-		 }
-		]
+
+		if(project.images && project.images.length) {
+			images = [
+				{
+					src: require('./assets/illustration/' + project.images[0]),
+					width: 60,
+					height: 20,
+					aspectRatio: 3
+			 },
+				{
+					src: require('./assets/illustration/' + project.images[1]),
+					width: 30,
+					height: 20,
+					aspectRatio: 1.5
+			 },
+				{
+					src: require('./assets/illustration/' + project.images[2]),
+					width: 30,
+					height: 20,
+					aspectRatio: 1.5
+			 }
+		 ];
+		}
 
     return (
 			<Dialog className="projectDialog" open={projectDialog.toggle} onCancel={this.handleCloseDialog.bind(this)}>
@@ -69,9 +74,21 @@ class ProjectDialog extends React.Component {
 						{ project.skills.map(this.getSkillChip.bind(this)) }
 					</div>
 
-					<div className="images">
-						<Gallery className="gallery" photos={images} disableLightbox />
-					</div>
+					{
+						images ?
+						<div className="images">
+							<Gallery className="gallery" photos={images} disableLightbox />
+						</div>
+						: null
+					}
+
+
+					{ project.video_url ?
+						<div className="video">
+							<ReactPlayer width="100%" height="400px" url={project.video_url} controls />
+						</div>
+						: null
+					}
 
 					<Grid className="description">
 						<Cell col={8} className="description-section">
@@ -81,7 +98,7 @@ class ProjectDialog extends React.Component {
 							</div>
 						</Cell>
 
-						<Cell offset={1} col={3} className="client">
+						<Cell col={4} className="client">
 							<h2>{project.description.client.title}</h2>
 							<div className="desc">
 								{project.description.client.content}
