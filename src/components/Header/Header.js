@@ -14,22 +14,6 @@ import './Header.scss'
 
 export const Header = (props) => {
 
-  const isActive = (val) => {
-    if((props.location.pathname === '/' && props.location.hash === '' )|| props.location.hash.split('#')[1] === val){
-      return ' route--active';
-    }
-
-    return '';
-  }
-
-  const isActiveRoute = (val) => {
-    if(props.location.pathname.split('/')[1] === val){
-      return ' route--active';
-    }
-
-    return '';
-  }
-
   var menuStyles = {
     bmBurgerButton: {
       position: 'fixed',
@@ -53,31 +37,31 @@ export const Header = (props) => {
 
   return (
   <Menu right noOverlay id={"menu"} className="menu" styles={ menuStyles }>
-    <RadiumLink to='/#home' className={"button" + isActive('home')}>
+    <RadiumLink to='/#home' className="button">
       <Icon name="favorite_border" className="icon" /> Home
     </RadiumLink>
 
-    <RadiumLink to='/#about' className={"button" + isActive('about')}>
+    <RadiumLink to='/#about' className="button">
       <Icon name="face" className="icon" /> About
     </RadiumLink>
 
-    <RadiumLink to='/#presta' className={"button" + isActive('presta')}>
+    <RadiumLink to='/#presta' className="button">
       <Icon name="brush" className="icon" /> Presta
     </RadiumLink>
 
-    <RadiumLink to='/#skills' className={"button" + isActive('skills')}>
+    <RadiumLink to='/#skills' className="button">
       <Icon name="computer" className="icon" /> Skills
     </RadiumLink>
 
-    <RadiumLink to='/#portfolio' className={"button" + isActive('portfolio')}>
+    <RadiumLink to='/#portfolio' className="button">
       <Icon name="photo_library" className="icon" /> Portfolio
     </RadiumLink>
 
-    <RadiumLink to='/counter' className={"button" + isActiveRoute('counter')}>
+    {/* <RadiumLink to='/counter' className="button">
       <Icon name="mode_edit" className="icon" /> Blog
-    </RadiumLink>
+    </RadiumLink> */}
 
-    <RadiumLink to='/#contact' className={"button" + isActive('contact')}>
+    <RadiumLink to='/#contact' className="button">
       <Icon name="free_breakfast" className="icon" /> Contact
     </RadiumLink>
   </Menu>
