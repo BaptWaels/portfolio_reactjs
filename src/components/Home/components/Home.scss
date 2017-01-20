@@ -5,9 +5,9 @@
 
   text-shadow: -2px 1px rgba(black, 0.1);
 
-	display: flex;
-  align-items: center;
-  text-align: center;
+	display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
 
   h1 {
     font-family: 'Montserrat', Montserrat, Helvetica;
