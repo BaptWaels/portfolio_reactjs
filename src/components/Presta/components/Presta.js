@@ -51,7 +51,7 @@ class Presta extends React.Component {
                 </div>
               </Cell>
 
-              <Cell offset={3} col={6} tablet={4} phone={4}>
+              <Cell col={6} tablet={4} phone={4} offsetDesktop={3}>
                 <div className="img-container">
                   <img draggable="false" src={Automate} />
                   <h1>Automatisation</h1>

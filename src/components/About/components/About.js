@@ -68,7 +68,7 @@ class About extends React.Component {
                 </div>
               </Cell>
 
-              <Cell col={4} tablet={4} phone={4} offset={2}>
+              <Cell col={4} tablet={4} phone={4} offsetDesktop={2}>
                 <div className="img-container">
                   <img className="travel-img" draggable="false" src={Travel} />
                   <h1>Aventure</h1>

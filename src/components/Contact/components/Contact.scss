@@ -2,9 +2,9 @@
   height: 70vh;
   padding: 0;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
 
   .left-contact {
     font-family: 'Lato', Helvetica, Times, serif;
@@ -14,7 +14,6 @@
       overflow: hidden;
       max-width: 500px;
       background-color: white;
-      margin: 3em;
       display: inline-block;
 
       .title {
