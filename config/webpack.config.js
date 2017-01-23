@@ -32,6 +32,7 @@ webpackConfig.entry = {
     : [APP_ENTRY],
   vendor : project.compiler_vendors,
   typist: '!!style!css!react-typist/dist/Typist.css',
+  dialogPolyfill: '!!style!css!dialog-polyfill/dialog-polyfill.css',
   reactmdl: ['!!style!css!react-mdl/extra/material.min.css', 'react-mdl/extra/material.min.js']
 }
 

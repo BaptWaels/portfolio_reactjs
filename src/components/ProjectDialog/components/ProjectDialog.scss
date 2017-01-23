@@ -1,9 +1,10 @@
 .projectDialog{
   width: 70vw !important;
+  max-height: 90vh;
   max-width: 1300px;
   min-width: 320px;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
 
   .close {
     text-align: right;
@@ -15,7 +16,6 @@
 
   .content {
     box-sizing:border-box;
-    overflow-y: auto;
 
     .title{
       text-align: center;

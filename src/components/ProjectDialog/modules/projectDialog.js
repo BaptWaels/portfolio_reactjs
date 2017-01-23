@@ -40,7 +40,7 @@ const ACTION_HANDLERS = {
     return {
       ...state,
       toggle: false,
-      project: null
+      project: { name: '', skills: [], description: {section: '', client: ''}}
     }
   }
 }
@@ -48,7 +48,7 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 // Reducer
 // ------------------------------------
-const initialState = { toggle: false, project: null }
+const initialState = { toggle: false, project: { name: '', skills: [], description: {section: '', client: ''}} }
 export default function projectDialogReducer (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]
 

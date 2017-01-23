@@ -1,13 +1,23 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import { Grid, Cell, Dialog, Icon, Chip, ChipContact } from 'react-mdl';
 
 import Gallery from 'react-photo-gallery';
 import ReactPlayer from 'react-player';
 
-import './ProjectDialog.scss'
+import './ProjectDialog.scss';
 
 class ProjectDialog extends React.Component {
+
+	componentDidMount(){
+		const dialog = ReactDOM.findDOMNode(this);
+
+    if (dialog && !dialog.showModal) {   // avoid chrome warnings and update only on unsupported browsers
+      var dialogPolyfill = require('dialog-polyfill');
+			dialogPolyfill.registerDialog(dialog);
+    }
+	}
 
 	handleCloseDialog() {
 		this.props.hideProjectDialog();
@@ -30,11 +40,7 @@ class ProjectDialog extends React.Component {
 		const { projectDialog } = this.props;
 		let images = null;
 
-		if(!projectDialog.toggle){
-			return <div></div>;
-		}
-
-		let project = projectDialog.project;
+		let project = projectDialog.project ? projectDialog.project : {};
 
 		if(project.images && project.images.length) {
 			images = [
