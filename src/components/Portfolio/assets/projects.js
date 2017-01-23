@@ -77,7 +77,7 @@ export default [
             },
             section: {
                 title: "En bref...",
-                content: "Durant ma dernière année d'études, avec quelques amis, j'ai pu m'investir jour et nuit dans un projet de Startup : Parkki. Ce fut un très beau challenge autant humain que technique. J'ai pu participer aux différents choix techniques pour choisir la stack tech. ainsi qu'à l'élaboration du backoffice. Parkki est depuis incubée à Via-ID, incubateur de Norauto. Je n'ai cependant pas souhaité poursuivre l'aventure pour me diriger vers d'autres horizons tout en gardant cette fibre entrepreneuriale. Bon amusement les copains :)"
+                content: "Durant ma dernière année d'études, avec quelques amis, j'ai pu m'investir jour et nuit dans un projet de Startup : Parkki. Ce fut un très beau challenge autant humain que technique. J'ai pu participer aux différents choix techniques pour choisir la stack tech. ainsi qu'à l'élaboration du backoffice. Parkki est depuis incubée à Via-ID, incubateur du groupe Mobivia. Je n'ai cependant pas souhaité poursuivre l'aventure pour me diriger vers d'autres horizons tout en gardant cette fibre entrepreneuriale. Plus d'infos sur Parkki.fr"
             }
         }
     },
