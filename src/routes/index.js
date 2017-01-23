@@ -9,8 +9,7 @@ export const createRoutes = (store) => ({
   path        : '/',
   component   : CoreLayout,
   indexRoute  : Main,
-  childRoutes : [
-  ]
+  childRoutes : []
 })
 
 /*  Note: childRoutes can be chunked or otherwise loaded programmatically
