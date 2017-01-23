@@ -16,7 +16,7 @@ class About extends React.Component {
 	render() {
 		return (
       <Grid id="about" className="about" noSpacing>
-        <Cell col={4} tablet={3} mobile={4} className="left-about">
+        <Cell col={4} tablet={3} phone={4} className="left-about">
           <div className="section-title">
             <div className="sliding">
               About
@@ -24,7 +24,7 @@ class About extends React.Component {
           </div>
         </Cell>
 
-        <Cell col={8} tablet={5} mobile={4} className="right-about">
+        <Cell col={8} tablet={5} phone={4} className="right-about">
           <div className="container">
             <div className="avatar">
               <img className="me" draggable="false" src={Avatar} />

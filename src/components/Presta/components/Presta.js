@@ -15,7 +15,7 @@ class Presta extends React.Component {
 	render() {
 		return (
       <Grid id="presta" className="presta" noSpacing>
-        <Cell col={4} tablet={3} mobile={4} className="left-presta">
+        <Cell col={4} tablet={3} phone={4} className="left-presta">
           <div className="section-title">
             <div className="sliding">
               Presta
@@ -23,7 +23,7 @@ class Presta extends React.Component {
           </div>
         </Cell>
 
-        <Cell col={8} tablet={5} mobile={4} className="right-presta">
+        <Cell col={8} tablet={5} phone={4} className="right-presta">
           <div className="container">
 
             <Grid>

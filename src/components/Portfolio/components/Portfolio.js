@@ -15,13 +15,13 @@ class Portfolio extends React.Component {
 
 		return (
       <div id="portfolio" className="portfolio">
+				<ProjectDialog />
         <Grid noSpacing>
           {
             projects.map((project, i) =>
               <Project project={project} key={i} />
             )
           }
-					<ProjectDialog />
         </Grid>
       </div>
     )

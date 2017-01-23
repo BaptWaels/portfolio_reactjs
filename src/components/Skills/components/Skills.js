@@ -113,7 +113,7 @@ class Skills extends React.Component {
 
 		return (
       <Grid id="skills" className="skills" noSpacing>
-        <Cell col={4} tablet={3} mobile={4} className="left-skills">
+        <Cell col={4} tablet={3} phone={4} className="left-skills">
           <div className="section-title">
             <div className="sliding">
               Skills
@@ -121,7 +121,7 @@ class Skills extends React.Component {
           </div>
         </Cell>
 
-        <Cell col={8} tablet={5} mobile={4} className="right-skills">
+        <Cell col={8} tablet={5} phone={4} className="right-skills">
           <div className="container" ref="container">
             <ReactHighcharts config={config} ref="chart" />
           </div>

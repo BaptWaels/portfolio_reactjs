@@ -19,7 +19,7 @@ class Contact extends React.Component {
 	render() {
 		return (
       <Grid id="contact" className="contact" noSpacing>
-        <Cell col={8} tablet={8} mobile={4} align="middle" className="left-contact">
+        <Cell col={8} tablet={8} phone={4} align="middle" className="left-contact">
           <Cell className="contact-card" shadow={6}>
               <div className="title">
                 <h1><span>&lt;</span> B<span className="red">W</span> <span>&gt;</span></h1>
