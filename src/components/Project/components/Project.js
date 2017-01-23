@@ -31,7 +31,7 @@ class Project extends React.Component {
     return (
       <Cell className="project" col={4} phone={4} tablet={4} onClick={this.handleClick.bind(this)}>
         <div className="front">
-          <img src={Image} className="project-img" />
+          <img src={Image} alt="Project Image" className="project-img" />
         </div>
 
         <div className="back">

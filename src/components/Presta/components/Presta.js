@@ -29,7 +29,7 @@ class Presta extends React.Component {
             <Grid>
               <Cell col={6} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={FrontEnd} />
+                  <img draggable="false" alt="Front End symbol" src={FrontEnd} />
                   <h1>Front-End</h1>
                 </div>
                 <div className="description-container">
@@ -41,7 +41,7 @@ class Presta extends React.Component {
 
               <Cell col={6} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={BackEnd} />
+                  <img draggable="false" alt="Back End symbol" src={BackEnd} />
                   <h1>Back-End</h1>
                 </div>
                 <div className="description-container">
@@ -53,7 +53,7 @@ class Presta extends React.Component {
 
               <Cell col={6} tablet={4} phone={4} offsetDesktop={3}>
                 <div className="img-container">
-                  <img draggable="false" src={Automate} />
+                  <img draggable="false" alt="Automation symbol" src={Automate} />
                   <h1>Automatisation</h1>
                 </div>
                 <div className="description-container">

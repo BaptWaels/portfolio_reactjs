@@ -27,13 +27,13 @@ class About extends React.Component {
         <Cell col={8} tablet={5} phone={4} className="right-about">
           <div className="container">
             <div className="avatar">
-              <img className="me" draggable="false" src={Avatar} />
+              <img className="me" alt="Avatar of Baptiste Waels" draggable="false" src={Avatar} />
             </div>
 
             <Grid>
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={Quality} />
+                  <img draggable="false" alt="Quality symbol" src={Quality} />
                   <h1>Qualité</h1>
                 </div>
                 <div className="description-container">
@@ -45,7 +45,7 @@ class About extends React.Component {
 
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={Iterate} />
+                  <img draggable="false" alt="Iteration symbol" src={Iterate} />
                   <h1>Rapidité</h1>
                 </div>
                 <div className="description-container">
@@ -57,7 +57,7 @@ class About extends React.Component {
 
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={Heart} />
+                  <img draggable="false" alt="Heart symbol" src={Heart} />
                   <h1>Passion</h1>
                 </div>
 
@@ -70,7 +70,7 @@ class About extends React.Component {
 
               <Cell col={4} tablet={4} phone={4} offsetDesktop={2}>
                 <div className="img-container">
-                  <img className="travel-img" draggable="false" src={Travel} />
+                  <img className="travel-img" draggable="false" alt="Travel symbol" src={Travel} />
                   <h1>Aventure</h1>
                 </div>
                 <div className="description-container">
@@ -83,13 +83,13 @@ class About extends React.Component {
 
               <Cell col={4} offsetTablet={2} tablet={4} phone={4}>
                 <div className="img-container">
-                  <img draggable="false" src={Sport} />
+                  <img draggable="false" alt="Sport symbol" src={Sport} />
                   <h1>Crossfit</h1>
                 </div>
 
                 <div className="description-container">
                   <div className="description">
-                    Le <a target="_blank" href="https://www.youtube.com/watch?v=sBt83nuqpxs">Crossfit</a>* me permet de <span className="strong">relever de nouveaux défis</span> tous les jours. Au plaisir d'essayer ensemble durant notre première rencontre ?
+                    Le <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=sBt83nuqpxs">Crossfit</a>* me permet de <span className="strong">relever de nouveaux défis</span> tous les jours. Au plaisir d'essayer ensemble durant notre première rencontre ?
                   </div>
                 </div>
               </Cell>
