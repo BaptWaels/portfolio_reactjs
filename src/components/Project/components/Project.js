@@ -10,7 +10,8 @@ class Project extends React.Component {
 
   handleClick(){
     const { project, toggleProjectDialog } = this.props;
-
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no"; // ie only
     toggleProjectDialog(project);
     //browserHistory.push('/project' + project.url);
   }

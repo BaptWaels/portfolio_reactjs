@@ -20,6 +20,8 @@ class ProjectDialog extends React.Component {
 	}
 
 	handleCloseDialog() {
+		document.documentElement.style.overflow = 'auto';
+		document.body.scroll = "yes"; // ie only
 		this.props.hideProjectDialog();
 	}
 
@@ -65,54 +67,56 @@ class ProjectDialog extends React.Component {
 		 ];
 		}
 
+
+
     return (
-			<Dialog className="projectDialog" open={projectDialog.toggle} onCancel={this.handleCloseDialog.bind(this)}>
-				<div className="close">
-					<Icon name="clear" onClick={this.handleCloseDialog.bind(this)} />
-				</div>
-
-				<div className="content">
-					<div className="title">
-						<h1>{ project.name }</h1>
+				<Dialog className="projectDialog" open={projectDialog.toggle} onCancel={this.handleCloseDialog.bind(this)}>
+					<div className="close">
+						<Icon name="clear" onClick={this.handleCloseDialog.bind(this)} />
 					</div>
 
-					<div className="skills">
-						{ project.skills.map(this.getSkillChip.bind(this)) }
+					<div className="content" >
+						<div className="title">
+							<h1>{ project.name }</h1>
+						</div>
+
+						<div className="skills">
+							{ project.skills.map(this.getSkillChip.bind(this)) }
+						</div>
+
+						{
+							images ?
+							<div className="images">
+								<Gallery className="gallery" photos={images} disableLightbox />
+							</div>
+							: null
+						}
+
+
+						{ project.video_url ?
+							<div className="video">
+								<ReactPlayer width="100%" height="400px" url={project.video_url} controls />
+							</div>
+							: null
+						}
+
+						<Grid className="description">
+							<Cell col={8} className="description-section">
+								<h2>{project.description.section.title}</h2>
+								<div className="desc">
+									{project.description.section.content}
+								</div>
+							</Cell>
+
+							<Cell col={4} className="client">
+								<h2>{project.description.client.title}</h2>
+								<div className="desc">
+									{project.description.client.content}
+								</div>
+							</Cell>
+						</Grid>
 					</div>
-
-					{
-						images ?
-						<div className="images">
-							<Gallery className="gallery" photos={images} disableLightbox />
-						</div>
-						: null
-					}
-
-
-					{ project.video_url ?
-						<div className="video">
-							<ReactPlayer width="100%" height="400px" url={project.video_url} controls />
-						</div>
-						: null
-					}
-
-					<Grid className="description">
-						<Cell col={8} className="description-section">
-							<h2>{project.description.section.title}</h2>
-							<div className="desc">
-								{project.description.section.content}
-							</div>
-						</Cell>
-
-						<Cell col={4} className="client">
-							<h2>{project.description.client.title}</h2>
-							<div className="desc">
-								{project.description.client.content}
-							</div>
-						</Cell>
-					</Grid>
-				</div>
-      </Dialog>
+	      </Dialog>
     );
 	}
 }
