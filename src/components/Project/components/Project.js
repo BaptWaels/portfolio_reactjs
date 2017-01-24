@@ -12,6 +12,8 @@ class Project extends React.Component {
     const { project, toggleProjectDialog } = this.props;
     document.documentElement.style.overflow = 'hidden';
     document.body.scroll = "no"; // ie only
+    document.body.removeEventListener("touchmove", e => e.preventDefault(), false);
+
     toggleProjectDialog(project);
     //browserHistory.push('/project' + project.url);
   }

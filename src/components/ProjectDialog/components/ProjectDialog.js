@@ -21,7 +21,9 @@ class ProjectDialog extends React.Component {
 
 	handleCloseDialog() {
 		document.documentElement.style.overflow = 'auto';
-		document.body.scroll = "yes"; // ie only
+    document.body.scroll = "yes"; // ie only
+		document.body.addEventListener("touchmove", e => e.preventDefault(), false);
+
 		this.props.hideProjectDialog();
 	}
 
