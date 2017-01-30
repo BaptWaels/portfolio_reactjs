@@ -83,11 +83,9 @@ export default {
       }
 
     },
-    portfolio: {
-
-    },
     contact: {
-      job: "Développeur web - Freelance"
+      job: "Développeur web - Freelance",
+      phone: "Tél: "
     }
   },
 };

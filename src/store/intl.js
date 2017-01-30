@@ -20,8 +20,7 @@ export function switchLanguage(newLang) {
 // ------------------------------------
 
 
-//const initLocale = (global.navigator && global.navigator.language || 'en').split('-')[0].split('_')[0];
-const initLocale = 'fr';
+const initLocale = (global.navigator && global.navigator.language || 'en').split('-')[0].split('_')[0];
 
 // ------------------------------------
 // Action Handlers

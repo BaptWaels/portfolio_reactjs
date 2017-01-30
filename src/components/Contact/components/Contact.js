@@ -29,7 +29,7 @@ class Contact extends React.Component {
               </div>
 
               <div className="content">
-                <div>Tél: +33 (0)6 31 07 52 38</div>
+                <div>{ intl.messages['contact.phone'] }+33 (0)6 31 07 52 38</div>
                 <div>bwaels@gmail.com</div>
               </div>
 
