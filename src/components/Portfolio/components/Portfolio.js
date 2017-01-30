@@ -12,10 +12,11 @@ import './Portfolio.scss'
 class Portfolio extends React.Component {
 
 	render() {
+		const { intl, projectDialog, hideProjectDialog } = this.props;
 
 		return (
       <div id="portfolio" className="portfolio">
-				<ProjectDialog />
+				{ projectDialog.toggle ? <ProjectDialog intl={intl} data={projectDialog} hide={hideProjectDialog} /> : <div></div> }
         <Grid noSpacing>
           {
             projects.map((project, i) =>

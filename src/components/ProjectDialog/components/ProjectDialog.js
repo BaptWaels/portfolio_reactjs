@@ -24,7 +24,7 @@ class ProjectDialog extends React.Component {
     document.body.scroll = "yes"; // ie only
 		document.body.addEventListener("touchmove", e => e.preventDefault(), false);
 
-		this.props.hideProjectDialog();
+		this.props.hide();
 	}
 
 	getSkillChip(skill, index) {
@@ -41,10 +41,10 @@ class ProjectDialog extends React.Component {
 	}
 
 	render() {
-		const { projectDialog } = this.props;
+		const { data, intl } = this.props;
 		let images = null;
 
-		let project = projectDialog.project ? projectDialog.project : {};
+		let project = data.project;
 
 		if(project.images && project.images.length) {
 			images = [
@@ -72,7 +72,7 @@ class ProjectDialog extends React.Component {
 
 
     return (
-				<Dialog className="projectDialog" open={projectDialog.toggle} onCancel={this.handleCloseDialog.bind(this)}>
+				<Dialog className="projectDialog" open={data.toggle} onCancel={this.handleCloseDialog.bind(this)}>
 					<div className="close">
 						<Icon name="clear" onClick={this.handleCloseDialog.bind(this)} />
 					</div>
@@ -104,16 +104,16 @@ class ProjectDialog extends React.Component {
 
 						<Grid className="description">
 							<Cell col={8} className="description-section">
-								<h2>{project.description.section.title}</h2>
+								<h2>{project.description.section.title[intl.locale]}</h2>
 								<div className="desc">
-									{project.description.section.content}
+									{project.description.section.content[intl.locale]}
 								</div>
 							</Cell>
 
 							<Cell col={4} className="client">
 								<h2>{project.description.client.title}</h2>
 								<div className="desc">
-									{project.description.client.content}
+									{project.description.client.content[intl.locale]}
 								</div>
 							</Cell>
 						</Grid>

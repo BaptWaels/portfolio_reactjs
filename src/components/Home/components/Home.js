@@ -35,6 +35,8 @@ class Home extends React.Component {
 	}
 
 	render() {
+    const { intl } = this.props;
+
     let cursor = {
       show: true,
       blink: true,
@@ -47,14 +49,14 @@ class Home extends React.Component {
         <div style={{width:'100%'}}>
           <Cell col={12} tablet={8} phone={4}>
             <h1 className="middle" ref="section">
-              <span className="bold" ref="willMove">Hi, I'm <span className="red">Baptiste</span></span>
+              <span className="bold" ref="willMove">{intl.messages['home.welcome']} <span className="red">Baptiste</span></span>
               <br/>
             </h1>
           </Cell>
 
           <Cell col={12} tablet={8} phone={4}>
             <Typist avgTypingDelay={80} startDelay={1500} cursor={cursor}>
-              <span className="job">Développeur web<br /> Freelance</span>
+              <span className="job">{intl.messages['home.job']}<br /> Freelance</span>
             </Typist>
           </Cell>
         </div>

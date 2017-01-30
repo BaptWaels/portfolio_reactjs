@@ -35,14 +35,16 @@ class Main extends React.Component {
 	}
 
 	render() {
+		const { intl, switchLanguage } = this.props;
+
     return (
       <div>
-        <Home />
-        <About />
-        <Presta />
-				<Skills />
-				<Portfolio />
-				<Contact />
+        <Home intl={intl} />
+        <About intl={intl} switchLanguage={switchLanguage} />
+        <Presta intl={intl} switchLanguage={switchLanguage} />
+				<Skills intl={intl} switchLanguage={switchLanguage} />
+				<Portfolio intl={intl} switchLanguage={switchLanguage} />
+				<Contact intl={intl} switchLanguage={switchLanguage} />
       </div>
     )
 	}

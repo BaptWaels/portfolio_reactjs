@@ -14,6 +14,8 @@ import './About.scss'
 
 class About extends React.Component {
 	render() {
+		const { intl } = this.props;
+
 		return (
       <Grid id="about" className="about" noSpacing>
         <Cell col={4} tablet={3} phone={4} className="left-about">
@@ -34,11 +36,11 @@ class About extends React.Component {
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
                   <img draggable="false" alt="Quality symbol" src={Quality} />
-                  <h1>Qualité</h1>
+                  <h1>{intl.messages['about.quality.title']}</h1>
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    Je me tiens à la pointe des dernières innovations. Ceci me permet d'être fort de propositions afin d'<span className="strong">avancer ensemble</span> vers un produit à la hauteur de <span className="strong">nos attentes</span>.
+                    {intl.messages['about.quality.content.first']}<span className="strong">{intl.messages['about.quality.content.second']}</span>{intl.messages['about.quality.content.third']}<span className="strong">{intl.messages['about.quality.content.fourth']}</span>.
                   </div>
                 </div>
               </Cell>
@@ -46,11 +48,11 @@ class About extends React.Component {
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
                   <img draggable="false" alt="Iteration symbol" src={Iterate} />
-                  <h1>Rapidité</h1>
+									<h1>{intl.messages['about.rapidity.title']}</h1>
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    Sans intermédiaire, la <span className="strong">qualité</span> de nos échanges est optimum. Ceci optimise les itérations et <span className="strong">améliore votre produit final</span>.
+										{intl.messages['about.rapidity.content.first']}<span className="strong">{intl.messages['about.rapidity.content.second']}</span>{intl.messages['about.rapidity.content.third']}<span className="strong">{intl.messages['about.rapidity.content.fourth']}</span>.
                   </div>
                 </div>
               </Cell>
@@ -58,12 +60,12 @@ class About extends React.Component {
               <Cell col={4} tablet={4} phone={4}>
                 <div className="img-container">
                   <img draggable="false" alt="Heart symbol" src={Heart} />
-                  <h1>Passion</h1>
+									<h1>{intl.messages['about.passion.title']}</h1>
                 </div>
 
                 <div className="description-container">
                   <div className="description">
-                    Vous <span className="strong">rendre heureux, ma mission</span> ! Quoi de mieux que d'<span className="strong">avancer en compagnie</span> d'un développeur <span className="strong">passionné</span> ?
+										{intl.messages['about.passion.content.first']}<span className="strong">{intl.messages['about.passion.content.second']}</span>{intl.messages['about.passion.content.third']}<span className="strong">{intl.messages['about.passion.content.fourth']}</span>{intl.messages['about.passion.content.fifth']}<span className="strong">{intl.messages['about.passion.content.sixth']}</span>?
                   </div>
                 </div>
               </Cell>
@@ -71,11 +73,11 @@ class About extends React.Component {
               <Cell col={4} tablet={4} phone={4} offsetDesktop={2}>
                 <div className="img-container">
                   <img className="travel-img" draggable="false" alt="Travel symbol" src={Travel} />
-                  <h1>Aventure</h1>
+									<h1>{intl.messages['about.adventure.title']}</h1>
                 </div>
                 <div className="description-container">
                   <div className="description">
-                    L'entrepreneuriat, mes rencontres, mes voyages (USA, UK, Norvège ...) sont de <span className="strong">superbes aventures</span> ! Adaptation, ouverture d'esprit, <span className="strong">persévérance et optimisme</span> sont chers à mes yeux.
+										{intl.messages['about.adventure.content.first']}<span className="strong">{intl.messages['about.adventure.content.second']}</span>{intl.messages['about.adventure.content.third']}<span className="strong">{intl.messages['about.adventure.content.fourth']}</span>{intl.messages['about.adventure.content.fifth']}.
                   </div>
                 </div>
               </Cell>
@@ -84,12 +86,12 @@ class About extends React.Component {
               <Cell col={4} offsetTablet={2} tablet={4} phone={4}>
                 <div className="img-container">
                   <img draggable="false" alt="Sport symbol" src={Sport} />
-                  <h1>Crossfit</h1>
+									<h1>{intl.messages['about.crossfit.title']}</h1>
                 </div>
 
                 <div className="description-container">
                   <div className="description">
-                    Le <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=sBt83nuqpxs">Crossfit</a>* me permet de <span className="strong">relever de nouveaux défis</span> tous les jours. Au plaisir d'essayer ensemble durant notre première rencontre ?
+                    {intl.messages['about.crossfit.content.first']}<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=sBt83nuqpxs">Crossfit</a>{intl.messages['about.crossfit.content.second']}<span className="strong">{intl.messages['about.crossfit.content.third']}</span>{intl.messages['about.crossfit.content.fourth']}?
                   </div>
                 </div>
               </Cell>

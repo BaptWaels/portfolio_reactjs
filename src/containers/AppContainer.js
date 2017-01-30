@@ -2,6 +2,8 @@ import React, { Component, PropTypes } from 'react'
 import { browserHistory, Router } from 'react-router'
 import { Provider } from 'react-redux'
 
+import IntlWrapper from './IntlWrapper';
+
 class AppContainer extends Component {
   static propTypes = {
     routes : PropTypes.object.isRequired,
@@ -18,7 +20,9 @@ class AppContainer extends Component {
     return (
       <Provider store={store}>
         <div style={{ height: '100%' }}>
-          <Router history={browserHistory} children={routes} />
+          <IntlWrapper>
+            <Router history={browserHistory} children={routes} />
+          </IntlWrapper>
         </div>
       </Provider>
     )
