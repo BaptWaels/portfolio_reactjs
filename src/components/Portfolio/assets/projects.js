@@ -1,5 +1,116 @@
 export default [
   {
+    name: 'Midas',
+    url: '/midas',
+    skills: [
+      {
+        name: 'React.js',
+        logo: 'reactjs.png'
+      },
+      {
+        name: 'Redux',
+        logo: 'redux.png'
+      }
+    ],
+    main_image: 'midas.png',
+    // video_url: 'https://www.youtube.com/watch?v=vKWwQQv3Qz0',
+    description: {
+      client: {
+        title: 'Midas',
+        content: {
+          fr: 'Mission de quatre mois en 100% télétravail',
+          en: 'One month contract, 100% remotly'
+        }
+      },
+      section: {
+        title: {
+          fr: 'En bref...',
+          en: 'In short...'
+        },
+        content: {
+          fr:
+            "Développement d'un back-office d'administration en React.js (Gestion de stock, gestion de droits, d'utilisateurs, équipe...)",
+          en:
+            "Développement d'un back-office d'administration en React.js (Gestion de stock, gestion de droits, d'utilisateurs, équipe...)"
+        }
+      }
+    }
+  },
+  {
+    name: 'Leroy Merlin',
+    url: '/leroy-merlin',
+    skills: [
+      {
+        name: 'React.js',
+        logo: 'reactjs.png'
+      },
+      {
+        name: 'Redux',
+        logo: 'redux.png'
+      }
+    ],
+    main_image: 'leroy_merlin.png',
+    // video_url: 'https://www.youtube.com/watch?v=vKWwQQv3Qz0',
+    description: {
+      client: {
+        title: 'Leroy Merlin',
+        content: {
+          fr: "Mission d'un mois en 100% télétravail",
+          en: 'One month contract, 100% remotly'
+        }
+      },
+      section: {
+        title: {
+          fr: 'En bref...',
+          en: 'In short...'
+        },
+        content: {
+          fr:
+            "Développement d'une popin intégrable sur le site Leroy Merlin afin de rediriger l'utilisateur chez un partenaire (Frizbiz) après avoir répondu à une série de questions.",
+          en:
+            "Développement d'une popin intégrable sur le site Leroy Merlin afin de rediriger l'utilisateur chez un partenaire (Frizbiz) après avoir répondu à une série de questions."
+        }
+      }
+    }
+  },
+  {
+    name: 'Suzuki',
+    url: '/suzuki',
+    skills: [
+      {
+        name: 'React.js',
+        logo: 'reactjs.png'
+      },
+      {
+        name: 'Redux',
+        logo: 'redux.png'
+      }
+    ],
+    main_image: 'suzuki.png',
+    // video_url: 'https://www.youtube.com/watch?v=vKWwQQv3Qz0',
+    description: {
+      client: {
+        title: 'Suzuki',
+        content: {
+          fr: "Mission d'un mois en 100% télétravail",
+          en: 'One month contract, 100% remotly'
+        }
+      },
+      section: {
+        title: {
+          fr: 'En bref...',
+          en: 'In short...'
+        },
+        content: {
+          fr:
+            "Développement d'un \"POC\" de configurateur automobile pour Suzuki. Les maquettes du design ont été mise à disposition par Suzuki. J'ai développé l'interface web en React.js avec un autre freelance.",
+          en:
+            "Développement d'un \"POC\" de configurateur automobile pour Suzuki. Les maquettes du design ont été mise à disposition par Suzuki. J'ai développé l'interface web en React.js avec un autre freelance."
+        }
+      }
+    }
+  },
+  {
     name: 'Inesco',
     skills: [
       {
@@ -53,6 +164,48 @@ export default [
     }
   },
   {
+    name: 'Smart Table',
+    skills: [
+      {
+        name: 'DIY',
+        logo: 'diy.png'
+      },
+      {
+        name: 'Creativity',
+        logo: 'creativity.png'
+      },
+      {
+        name: 'Javascript',
+        logo: 'javascript.png'
+      }
+    ],
+    main_image: 'lilly.png',
+    video_url: 'https://www.youtube.com/watch?v=mNjFnTeOv-0',
+    description: {
+      client: {
+        title: 'ISEN - Adicode',
+        content: {
+          fr:
+            'Les ADICODE® sont un dispositif d’accélérateur d’innovation et de formation pour les élèves-ingénieurs ISEN et les entreprises.',
+          en:
+            'The educational, research activities and expertise related to the cooperative development of innovations are brought together under one shared brand: ADICODE®'
+        }
+      },
+      section: {
+        title: {
+          fr: 'En bref...',
+          en: 'In short...'
+        },
+        content: {
+          fr:
+            "Durant mes années d'études, j'ai pu réaliser différents projets / POOC. Lilly est l'un d'entre eux. Nous avions pour but de réaliser un projet innovant et technique. Avec plusieurs amis, nous avons décidé de créer de A à Z une table connectée. J'ai ainsi pu participer à la conception, aux choix techniques ainsi qu'à la réalisation de celle-ci. Etant fan d'IOT, ce projet était vraiment génial à réaliser !",
+          en:
+            'I’ve created many projects / POOC during my studies. Lilly was one of them. The main goal of it was to imagine and create an innovative project. With a bunch of friends, we’ve decided to create from scratch a smart table. I’ve had not only the ability to be part in the conception of this table but also the realisation of the technical part. It was a great experiment !'
+        }
+      }
+    }
+  },
+  {
     name: 'JWaves',
     skills: [
       {
@@ -92,48 +245,6 @@ export default [
             "Après une phase de prototypage, Hollio m'a demandé de développer une API sécurisée en Node.js ainsi qu'un backoffice d'administration React.js afin d'intégrer sa solution d'analyse de propagation d'ondes.",
           en:
             'After a first prototype, Hollio has asked me to create a NodeJS secured API and a React.js admin interface in order to integrate its waves propagation analysis algorithm.'
-        }
-      }
-    }
-  },
-  {
-    name: 'Pebblo',
-    skills: [
-      {
-        name: 'React.js',
-        logo: 'reactjs.png'
-      },
-      {
-        name: 'Redux',
-        logo: 'redux.png'
-      },
-      {
-        name: 'Leaflet.js',
-        logo: 'leafletjs.png'
-      }
-    ],
-    main_image: 'pebblo.png',
-    images: ['pebblo_1.png', 'pebblo_3.png', 'pebblo_2.png'],
-    description: {
-      client: {
-        title: 'Dévocité',
-        content: {
-          fr:
-            'Dévocité est spécialisée dans la réalisation d’objets multimédia spécifiques à destination du grand public. Leur objectif est d’offrir un accès simplifié et ludique à l’information culturelle, citoyenne et pédagogique au plus grand nombre.',
-          en:
-            'Devocité is specialised in the creation of multimedia objects. Their goal is to simplify cultural access to everyone.'
-        }
-      },
-      section: {
-        title: {
-          fr: 'En bref...',
-          en: 'In short...'
-        },
-        content: {
-          fr:
-            "Dans le but de proposer des visites interactives à ses clients, Devocité m'a demandé de développer un backend d'administration afin de pouvoir configurer ses cartes interactives de façon générique s'appuyant sur leur API REST. Ce backend doit pouvoir configurer tout type de cartes (indoor / outdoor). On peut par exemple ajouter des points d'intérêts avec descriptions multilingues, photos ...",
-          en:
-            'In order to suggest interactive tours to its customers, Devocité assigned me to develop an admin interface to configure maps with the help of their REST API. This interface is able to configure indoor and outdoor maps using Leaflet.js and React.js.'
         }
       }
     }
@@ -185,6 +296,48 @@ export default [
     }
   },
   {
+    name: 'Pebblo',
+    skills: [
+      {
+        name: 'React.js',
+        logo: 'reactjs.png'
+      },
+      {
+        name: 'Redux',
+        logo: 'redux.png'
+      },
+      {
+        name: 'Leaflet.js',
+        logo: 'leafletjs.png'
+      }
+    ],
+    main_image: 'pebblo.png',
+    images: ['pebblo_1.png', 'pebblo_3.png', 'pebblo_2.png'],
+    description: {
+      client: {
+        title: 'Dévocité',
+        content: {
+          fr:
+            'Dévocité est spécialisée dans la réalisation d’objets multimédia spécifiques à destination du grand public. Leur objectif est d’offrir un accès simplifié et ludique à l’information culturelle, citoyenne et pédagogique au plus grand nombre.',
+          en:
+            'Devocité is specialised in the creation of multimedia objects. Their goal is to simplify cultural access to everyone.'
+        }
+      },
+      section: {
+        title: {
+          fr: 'En bref...',
+          en: 'In short...'
+        },
+        content: {
+          fr:
+            "Dans le but de proposer des visites interactives à ses clients, Devocité m'a demandé de développer un backend d'administration afin de pouvoir configurer ses cartes interactives de façon générique s'appuyant sur leur API REST. Ce backend doit pouvoir configurer tout type de cartes (indoor / outdoor). On peut par exemple ajouter des points d'intérêts avec descriptions multilingues, photos ...",
+          en:
+            'In order to suggest interactive tours to its customers, Devocité assigned me to develop an admin interface to configure maps with the help of their REST API. This interface is able to configure indoor and outdoor maps using Leaflet.js and React.js.'
+        }
+      }
+    }
+  },
+  {
     name: 'Speaker Meetup Docker',
     skills: [
       {
@@ -226,88 +379,47 @@ export default [
       }
     }
   },
-  {
-    name: 'Smart Table',
-    skills: [
-      {
-        name: 'DIY',
-        logo: 'diy.png'
-      },
-      {
-        name: 'Creativity',
-        logo: 'creativity.png'
-      },
-      {
-        name: 'Javascript',
-        logo: 'javascript.png'
-      }
-    ],
-    main_image: 'lilly.png',
-    video_url: 'https://www.youtube.com/watch?v=mNjFnTeOv-0',
-    description: {
-      client: {
-        title: 'ISEN - Adicode',
-        content: {
-          fr:
-            'Les ADICODE® sont un dispositif d’accélérateur d’innovation et de formation pour les élèves-ingénieurs ISEN et les entreprises.',
-          en:
-            'The educational, research activities and expertise related to the cooperative development of innovations are brought together under one shared brand: ADICODE®'
-        }
-      },
-      section: {
-        title: {
-          fr: 'En bref...',
-          en: 'In short...'
-        },
-        content: {
-          fr:
-            "Durant mes années d'études, j'ai pu réaliser différents projets / POOC. Lilly est l'un d'entre eux. Nous avions pour but de réaliser un projet innovant et technique. Avec plusieurs amis, nous avons décidé de créer de A à Z une table connectée. J'ai ainsi pu participer à la conception, aux choix techniques ainsi qu'à la réalisation de celle-ci. Etant fan d'IOT, ce projet était vraiment génial à réaliser !",
-          en:
-            'I’ve created many projects / POOC during my studies. Lilly was one of them. The main goal of it was to imagine and create an innovative project. With a bunch of friends, we’ve decided to create from scratch a smart table. I’ve had not only the ability to be part in the conception of this table but also the realisation of the technical part. It was a great experiment !'
-        }
-      }
-    }
-  },
-  {
-    name: 'Feedback @ Decathlon',
-    skills: [
-      {
-        name: 'R&D',
-        logo: 'creativity.png'
-      },
-      {
-        name: 'Angular.js',
-        logo: 'angularjs.png'
-      },
-      {
-        name: 'REST API',
-        logo: 'rest.png'
-      }
-    ],
-    main_image: 'feedback.png',
-    description: {
-      client: {
-        title: 'Decathlon',
-        content: {
-          fr:
-            'Decathlon est un groupe français de grande distribution spécialisé dans les articles de sport et de loisirs.',
-          en: "Decathlon is a French brand. It is one of the world's largest sporting goods retailers."
-        }
-      },
-      section: {
-        title: {
-          fr: 'En bref...',
-          en: 'In short...'
-        },
-        content: {
-          fr:
-            "Durant mes deux dernières années en alternance, j'ai pu proposer différents sujets de R&D à Décathlon. Je suis parti du constat qu'il était difficile d'avoir des retours clients sur nos applications internes. J'ai ainsi pu développer un plugin JS à intégrer dans nos applications afin d'avoir un feedback de la part de nos utilisateurs. Sur ce projet, je me suis chargé de toute la stack (Conception, API Rest, Plugin JS, Interface Admin Angular.js, BDD, configuration du serveur etc.). Ce fut génial de mettre à disposition ce plugin à nos ~500 utilisateurs internes à l'entreprise.",
-          en:
-            'I’ve done my two last years of studies in apprenticeship at Decathlon. Among other things, I’ve done some R&D. I’ve created a javascript plugin to get user feedback. I was in charge of all the stack on this project (design, REST API, javascript plugin, Angular.js Admin interface, deployment…).'
-        }
-      }
-    }
-  },
+
+  // {
+  //   name: 'Feedback @ Decathlon',
+  //   skills: [
+  //     {
+  //       name: 'R&D',
+  //       logo: 'creativity.png'
+  //     },
+  //     {
+  //       name: 'Angular.js',
+  //       logo: 'angularjs.png'
+  //     },
+  //     {
+  //       name: 'REST API',
+  //       logo: 'rest.png'
+  //     }
+  //   ],
+  //   main_image: 'feedback.png',
+  //   description: {
+  //     client: {
+  //       title: 'Decathlon',
+  //       content: {
+  //         fr:
+  //           'Decathlon est un groupe français de grande distribution spécialisé dans les articles de sport et de loisirs.',
+  //         en: "Decathlon is a French brand. It is one of the world's largest sporting goods retailers."
+  //       }
+  //     },
+  //     section: {
+  //       title: {
+  //         fr: 'En bref...',
+  //         en: 'In short...'
+  //       },
+  //       content: {
+  //         fr:
+  //           "Durant mes deux dernières années en alternance, j'ai pu proposer différents sujets de R&D à Décathlon. Je suis parti du constat qu'il était difficile d'avoir des retours clients sur nos applications internes. J'ai ainsi pu développer un plugin JS à intégrer dans nos applications afin d'avoir un feedback de la part de nos utilisateurs. Sur ce projet, je me suis chargé de toute la stack (Conception, API Rest, Plugin JS, Interface Admin Angular.js, BDD, configuration du serveur etc.). Ce fut génial de mettre à disposition ce plugin à nos ~500 utilisateurs internes à l'entreprise.",
+  //         en:
+  //           'I’ve done my two last years of studies in apprenticeship at Decathlon. Among other things, I’ve done some R&D. I’ve created a javascript plugin to get user feedback. I was in charge of all the stack on this project (design, REST API, javascript plugin, Angular.js Admin interface, deployment…).'
+  //       }
+  //     }
+  //   }
+  // },
   {
     name: 'DevOps @ Decathlon',
     skills: [
