@@ -5,7 +5,7 @@ import '../../styles/core.scss'
 
 export const CoreLayout = ({ children, location, intl, switchLanguage }) => {
   return (
-    <div className="core-layout">
+    <div className='core-layout'>
       <Header location={location} />
       {React.cloneElement(children, { intl, switchLanguage })}
     </div>
@@ -13,7 +13,7 @@ export const CoreLayout = ({ children, location, intl, switchLanguage }) => {
 }
 
 CoreLayout.propTypes = {
-  children : React.PropTypes.element.isRequired
+  children: React.PropTypes.element.isRequired
 }
 
 export default CoreLayout

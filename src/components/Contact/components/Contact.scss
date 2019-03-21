@@ -1,4 +1,4 @@
-.contact{
+.contact {
   height: 70vh;
   padding: 0;
 
@@ -7,7 +7,7 @@
   text-align: center !important;
 
   .left-contact {
-    font-family: 'Lato', Helvetica, Times, serif;
+    font-family: "Lato", Helvetica, Times, serif;
 
     .contact-card {
       width: 85%;
@@ -20,14 +20,14 @@
         text-align: center;
 
         h1 {
-          font-family: 'Lato', Helvetica, Times, serif;
+          font-family: "Lato", Helvetica, Times, serif;
           font-size: 45px;
           font-weight: 700;
           margin-bottom: 0px;
         }
 
         h2 {
-          font-family: 'Lato', Helvetica, Times, serif;
+          font-family: "Lato", Helvetica, Times, serif;
           font-size: 18px;
           margin-top: 0px;
           line-height: 30px;
@@ -54,23 +54,25 @@
 
         .social-icon:hover {
           transform: scale(1.1);
-          box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
         }
       }
     }
   }
 
   .right-contact {
-    .coffee-mug{
-      position:relative;
-      margin:150px auto;
-      width:150px;
-      height:150px;
-      background:#3F2616;
-      border-radius:50%;
-      box-shadow:0 0 0 10px #442918, 0 0 0 25px #3C2415, 0 0 0 42px #cccccc, 0 0 0 65px #e5e5e5, 0 120px 0 -25px #3C2415, 100px 70px 0 -25px #3C2415, 80px 140px 0 -10px #3C2415, 0px 210px 0 -55px #3C2415, 20px 250px 0 -65px #3C2415;
-      &::before{
-        content:'';
+    .coffee-mug {
+      position: relative;
+      margin: 150px auto;
+      width: 150px;
+      height: 150px;
+      background: #3f2616;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #442918, 0 0 0 25px #3c2415, 0 0 0 42px #cccccc, 0 0 0 65px #e5e5e5,
+        0 120px 0 -25px #3c2415, 100px 70px 0 -25px #3c2415, 80px 140px 0 -10px #3c2415,
+        0px 210px 0 -55px #3c2415, 20px 250px 0 -65px #3c2415;
+      &::before {
+        content: "";
         position: absolute;
         height: 80px;
         width: 60px;
@@ -79,32 +81,36 @@
         background: #cccccc;
         //overflow: hidden;
         border-radius: 5px;
-        box-shadow:  inset 0px 50px 0 0px #e5e5e5;
-        z-index:-1;
-        transform:rotate(45deg);
+        box-shadow: inset 0px 50px 0 0px #e5e5e5;
+        z-index: -1;
+        transform: rotate(45deg);
       }
-      &::after{
-        content:'';
-        width:20px;
-        height:20px;
-        border-radius:50%;
-        position:absolute;
-        border:3px solid #77665C;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-        top:0;
-        bottom:0;
-        margin-top:auto;
-        margin-bottom:auto;
-        opacity:0.2;
-        animation: rings 3s ease-out infinite ;
+      &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        border: 3px solid #77665c;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 0.2;
+        animation: rings 3s ease-out infinite;
       }
     }
 
     @keyframes rings {
-      to{ width: 150px; height:150px; opacity:0}
+      to {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+      }
     }
   }
 }

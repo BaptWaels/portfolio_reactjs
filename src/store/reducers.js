@@ -3,7 +3,7 @@ import locationReducer from './location'
 import intlReducer from './intl'
 import projectDialog from '../components/ProjectDialog/modules/projectDialog'
 
-export const makeRootReducer = (asyncReducers) => {
+export const makeRootReducer = asyncReducers => {
   return combineReducers({
     location: locationReducer,
     intl: intlReducer,

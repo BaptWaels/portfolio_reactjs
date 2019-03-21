@@ -1,4 +1,4 @@
-.skills{
+.skills {
   padding: 0;
   text-align: center;
 
@@ -9,21 +9,21 @@
     display: flex;
     align-items: center;
 
-    .section-title{
+    .section-title {
       width: 100%;
-      color: rgba(0,0,0,.87);
-      font-family: 'Satisfy', cursive;
+      color: rgba(0, 0, 0, 0.87);
+      font-family: "Satisfy", cursive;
       font-size: 65px;
     }
   }
 
   .right-skills {
     height: 440px;
-    background-color: #F1FFFA;
+    background-color: #f1fffa;
     display: flex;
     align-items: center;
 
-    .container{
+    .container {
       width: 100%;
       margin: 0 auto;
       max-width: 850px;

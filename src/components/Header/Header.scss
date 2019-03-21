@@ -3,7 +3,7 @@
   margin-left: 50px;
   padding: 1em;
   font-size: 25px;
-  font-family: 'Raleway', Arial;
+  font-family: "Raleway", Arial;
   color: #b8b7ad;
   text-decoration: none;
   cursor: pointer;
@@ -19,6 +19,7 @@
   }
 }
 
-.button:hover, .button.route--active {
+.button:hover,
+.button.route--active {
   color: #c94e50;
 }

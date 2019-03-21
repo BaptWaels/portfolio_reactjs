@@ -1,8 +1,8 @@
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.projectDialog{
+.projectDialog {
   width: 70vw !important;
   max-height: 90vh;
   max-width: 1300px;
@@ -17,7 +17,7 @@
     // margin-left: 5px;
     // position: fixed;
 
-    .material-icons {
+    .material-icons  {
       padding: 3px;
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.6);
@@ -26,17 +26,17 @@
   }
 
   .content {
-    box-sizing:border-box;
+    box-sizing: border-box;
 
-    .title{
+    .title {
       text-align: center;
       margin-bottom: 30px;
 
       h1 {
-        color: rgba(0,0,0,.87);
-        font-family: 'Montserrat', Montserrat, Helvetica;
+        color: rgba(0, 0, 0, 0.87);
+        font-family: "Montserrat", Montserrat, Helvetica;
         line-height: 1.2;
-        letter-spacing: -.45rem;
+        letter-spacing: -0.45rem;
         font-size: 4.853em;
         font-weight: 700;
         margin: 0px;
@@ -52,7 +52,7 @@
     .skills {
       margin-bottom: 30px;
 
-      .skill-chip{
+      .skill-chip {
         margin-right: 10px;
       }
 
@@ -85,9 +85,9 @@
 
         h2 {
           color: #2980b9;
-          font-family: 'Montserrat', Montserrat, Helvetica;
+          font-family: "Montserrat", Montserrat, Helvetica;
           line-height: 1.2;
-          letter-spacing: -.45rem;
+          letter-spacing: -0.45rem;
           font-size: 2.853em;
           font-weight: 700;
           margin: 0px;
@@ -99,9 +99,9 @@
 
         h2 {
           color: #2980b9;
-          font-family: 'Montserrat', Montserrat, Helvetica;
+          font-family: "Montserrat", Montserrat, Helvetica;
           line-height: 1.2;
-          letter-spacing: -.45rem;
+          letter-spacing: -0.45rem;
           font-size: 4.853em;
           font-weight: 700;
           margin: 0px;

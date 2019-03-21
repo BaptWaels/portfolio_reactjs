@@ -30,10 +30,7 @@ export default (initialState = {}) => {
   const store = createStore(
     makeRootReducer(),
     initialState,
-    composeEnhancers(
-      applyMiddleware(...middleware),
-      ...enhancers
-    )
+    composeEnhancers(applyMiddleware(...middleware), ...enhancers)
   )
   store.asyncReducers = {}
 

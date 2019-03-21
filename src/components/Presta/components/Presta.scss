@@ -1,18 +1,18 @@
-.presta{
+.presta {
   padding: 0;
 
   .left-presta {
-    background-color: #F1FFFA;
+    background-color: #f1fffa;
     margin: 0;
     display: flex;
     align-items: center;
     text-align: center;
     min-height: 300px;
 
-    .section-title{
+    .section-title {
       width: 100%;
       color: grey;
-      font-family: 'Satisfy', cursive;
+      font-family: "Satisfy", cursive;
       font-size: 65px;
     }
   }
@@ -26,7 +26,7 @@
       margin-top: 10px;
 
       h1 {
-        font-family: 'Lato', Helvetica, Times, serif;
+        font-family: "Lato", Helvetica, Times, serif;
         font-size: 30px;
         font-weight: 700;
       }
@@ -39,7 +39,7 @@
           height: 110px;
         }
 
-        .travel-img{
+        .travel-img {
           width: 110px;
         }
       }
@@ -47,7 +47,7 @@
       .description-container {
         width: 100%;
 
-        .description{
+        .description {
           max-width: 250px;
           width: 90%;
           margin: 0 auto;
@@ -59,7 +59,7 @@
 
           a {
             font-weight: 900;
-            color: rgba(0,0,0,.87);
+            color: rgba(0, 0, 0, 0.87);
           }
         }
       }

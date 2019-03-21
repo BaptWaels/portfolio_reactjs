@@ -1,39 +1,39 @@
-.home{
+.home {
   height: 100vh;
   padding: 0;
   color: #ffffff;
 
   text-shadow: -2px 1px rgba(black, 0.1);
 
-	display: flex !important;
+  display: flex !important;
   align-items: center !important;
   text-align: center !important;
 
   h1 {
-    font-family: 'Montserrat', Montserrat, Helvetica;
+    font-family: "Montserrat", Montserrat, Helvetica;
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -.45rem;
-  	font-size: 6.853em;
+    letter-spacing: -0.45rem;
+    font-size: 6.853em;
   }
 
   .red {
-    color: #FF4056;
+    color: #ff4056;
     font-weight: normal;
   }
 
-  .bold{
+  .bold {
     display: inline-block;
     will-change: transform;
   }
 
   .job {
-		font-size: 1.4em;
-		font-weight: 300;
-		font-family: 'Lato', Helvetica, Times, serif;
-		text-transform: uppercase;
-		letter-spacing: 3.5px;
-		white-space: nowrap;
+    font-size: 1.4em;
+    font-weight: 300;
+    font-family: "Lato", Helvetica, Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    white-space: nowrap;
   }
 
   .Typist {

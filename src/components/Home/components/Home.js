@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Grid, Cell } from 'react-mdl'
-import { browserHistory } from 'react-router'
 import './Home.scss'
 
 import Typist from 'react-typist'

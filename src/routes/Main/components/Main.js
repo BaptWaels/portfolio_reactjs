@@ -1,53 +1,58 @@
 import React from 'react'
-import Home from '../../../components/Home';
-import About from '../../../components/About';
-import Presta from '../../../components/Presta';
-import Skills from '../../../components/Skills';
-import Portfolio from '../../../components/Portfolio';
-import Contact from '../../../components/Contact';
+import Home from '../../../components/Home'
+import About from '../../../components/About'
+import Presta from '../../../components/Presta'
+import Skills from '../../../components/Skills'
+import Portfolio from '../../../components/Portfolio'
+import Contact from '../../../components/Contact'
 
-import { scroller } from 'react-scroll';
+import { scroller } from 'react-scroll'
+import { LazyLoadComponent, trackWindowScroll } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 class Main extends React.Component {
-	componentDidMount() {
-		const { location } = this.props;
+  componentDidMount () {
+    const { location } = this.props
 
-		if(location && location.hash){
-			let hash = location.hash.split('#')[1];
-			this.scrollTo(hash);
-		}
-	}
+    if (location && location.hash) {
+      let hash = location.hash.split('#')[1]
+      this.scrollTo(hash)
+    }
+  }
 
-	componentDidUpdate() {
-		const { location } = this.props;
+  componentDidUpdate () {
+    const { location } = this.props
 
-		if(location && location.hash){
-			let hash = location.hash.split('#')[1];
-			this.scrollTo(hash);
-		}
-	}
+    if (location && location.hash) {
+      let hash = location.hash.split('#')[1]
+      this.scrollTo(hash)
+    }
+  }
 
-	scrollTo(anchor){
-		scroller.scrollTo(anchor, {
-			duration: 500,
-			smooth: true,
-		});
-	}
+  scrollTo (anchor) {
+    scroller.scrollTo(anchor, {
+      duration: 500,
+      smooth: true
+    })
+  }
 
-	render() {
-		const { intl, switchLanguage } = this.props;
+  render () {
+    const { intl, switchLanguage } = this.props
 
     return (
       <div>
         <Home intl={intl} />
         <About intl={intl} switchLanguage={switchLanguage} />
         <Presta intl={intl} switchLanguage={switchLanguage} />
-				<Skills intl={intl} switchLanguage={switchLanguage} />
-				<Portfolio intl={intl} switchLanguage={switchLanguage} />
-				<Contact intl={intl} switchLanguage={switchLanguage} />
+        <Skills intl={intl} switchLanguage={switchLanguage} />
+        <Portfolio intl={intl} switchLanguage={switchLanguage} />
+
+        <LazyLoadComponent>
+          <Contact intl={intl} switchLanguage={switchLanguage} />
+        </LazyLoadComponent>
       </div>
     )
-	}
+  }
 }
 
-export default Main
+export default trackWindowScroll(Main)
